@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: -30vh;
+  margin-left: 20vw;
+  align-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.floor {
+  background: rgba(145, 195, 117, 1) !important;
+  border: 1px solid white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wall.left {
+  background: rgba(49, 106, 66, 1);
+  border: 1px solid rgba(49, 106, 66, 1) !important;
+}
+
+.wall.right {
+  background: rgba(119, 152, 67, 1);
+  border: 1px solid rgba(119, 152, 67, 1) !important;
+}
+
+.water > .floor {
+  background: rgba(52, 248, 213, 1) !important;
+  border: 1px solid white !important;
+}
+
+.water > .wall.left {
+  background: rgba(30, 164, 212, 1);
+  border: 1px solid rgba(30, 164, 212, 1) !important;
+}
+
+.water > .wall.right {
+  background: rgba(24, 192, 252, 1);
+  border: 1px solid rgba(24, 192, 252, 1) !important;
 }
